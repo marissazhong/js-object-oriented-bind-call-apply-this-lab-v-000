@@ -22,11 +22,9 @@ function returnNewFunctionOf(functionToBeCopied, thisValue) {
 let fred;
 let functionToBeCopied;
 
-beforeEach(function(){
   functionToBeCopied = function (){
     return this
   }
  fred = { name: 'fred'}
-})
 
 console.log(returnNewFunctionOf(functionToBeCopied, fred));
