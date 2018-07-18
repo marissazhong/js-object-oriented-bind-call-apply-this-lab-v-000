@@ -15,12 +15,12 @@ function setThisWithApply(fn, thisValue, arg) {
 
 function returnNewFunctionOf(functionToBeCopied, thisValue) {
   let fnCopied = functionToBeCopied.bind();
-  //console.log(fnCopied);
+  console.log(fnCopied);
   return fnCopied.call(thisValue);
 }
 
-// let fred;
-// let functionToBeCopied;
-// functionToBeCopied = function (){return this};
-// fred = { name: 'fred'};
-// console.log(returnNewFunctionOf(functionToBeCopied, fred));
+let fred;
+let functionToBeCopied;
+functionToBeCopied = function (){return this};
+fred = { name: 'fred'};
+console.log(returnNewFunctionOf(functionToBeCopied, fred));
