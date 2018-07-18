@@ -18,3 +18,15 @@ function returnNewFunctionOf(functionToBeCopied, thisValue) {
   console.log(fnCopied);
   return fnCopied;
 }
+
+let fred;
+let functionToBeCopied;
+
+beforeEach(function(){
+  functionToBeCopied = function (){
+    return this
+  }
+ fred = { name: 'fred'}
+})
+
+console.log(returnNewFunctionOf(functionToBeCopied, fred));
