@@ -22,9 +22,6 @@ function returnNewFunctionOf(functionToBeCopied, thisValue) {
 let fred;
 let functionToBeCopied;
 
-functionToBeCopied = function (){
-  return this
-}
-fred = { name: 'fred'}
-
-console.log(returnNewFunctionOf(functionToBeCopied, fred));
+// functionToBeCopied = function (){return this};
+// fred = { name: 'fred'};
+// console.log(returnNewFunctionOf(functionToBeCopied, fred));
