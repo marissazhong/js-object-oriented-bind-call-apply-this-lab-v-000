@@ -1,5 +1,6 @@
 //Your code here
 
 function justInvoke(fn) {
-  return fn();
+  const result = fn();
+  return result;
 }
