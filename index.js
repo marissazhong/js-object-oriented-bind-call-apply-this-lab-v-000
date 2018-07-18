@@ -19,9 +19,8 @@ function returnNewFunctionOf(functionToBeCopied, thisValue) {
   return fnCopied.call(thisValue);
 }
 
-let fred;
-let functionToBeCopied;
-
+// let fred;
+// let functionToBeCopied;
 // functionToBeCopied = function (){return this};
 // fred = { name: 'fred'};
 // console.log(returnNewFunctionOf(functionToBeCopied, fred));
